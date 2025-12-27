@@ -14,7 +14,7 @@
         {
         }
 
-        public Seller(int id, string email, string name, double baseSalary, DateTime bithDate, Department department)
+        public Seller(int id, string name,string email,  DateTime bithDate, double baseSalary, Department department)
         {
             Id = id;
             Email = email;

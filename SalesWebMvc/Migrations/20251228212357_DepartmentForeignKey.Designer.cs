@@ -12,7 +12,7 @@ using SalesWebMvc.Data;
 namespace SalesWebMvc.Migrations
 {
     [DbContext(typeof(SalesWebMvcContext))]
-    [Migration("20251228195417_DepartmentForeignKey")]
+    [Migration("20251228212357_DepartmentForeignKey")]
     partial class DepartmentForeignKey
     {
         /// <inheritdoc />
@@ -80,7 +80,7 @@ namespace SalesWebMvc.Migrations
                     b.Property<double>("BaseSalary")
                         .HasColumnType("double");
 
-                    b.Property<DateTime>("BithDate")
+                    b.Property<DateTime>("BirthDate")
                         .HasColumnType("datetime(6)");
 
                     b.Property<int>("DepartmentId")

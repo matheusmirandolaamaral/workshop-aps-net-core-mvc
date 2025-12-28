@@ -10,13 +10,19 @@ namespace SalesWebMvc.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-
+            migrationBuilder.RenameColumn(
+                name: "BithDate",
+                table: "Seller",
+                newName: "BirthDate");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-
+            migrationBuilder.RenameColumn(
+                name: "BirthDate",
+                table: "Seller",
+                newName: "BithDate");
         }
     }
 }
